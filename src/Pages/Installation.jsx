@@ -40,7 +40,7 @@ const Installation = () => {
       <p className="text-[#627382] text-[12px] md:text-base text-center w-full mt-4 mb-10">
         Explore All Trending Apps on the Market developed by us
       </p>
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex flex-col md:flex-row gap-4 items-center justify-between mb-6">
         <p>({sortedItem.length}) App Installed</p>
         <select
           value={sortOrder}

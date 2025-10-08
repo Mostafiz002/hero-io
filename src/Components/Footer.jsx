@@ -20,15 +20,24 @@ const Footer = () => {
         <nav>
           <div className="grid grid-flow-col gap-4">
             <Link
+              className="hover:scale-110 transition-transform hover:text-[#ffffffbd]"
               target="_blank"
               to="https://www.facebook.com/mahinmostafiz.m/"
             >
               <Facebook />
             </Link>
-            <Link target="_blank" to="https://www.linkedin.com/in/mostafiz04">
+            <Link
+              className="hover:scale-110 transition-transform hover:text-[#ffffffbd]"
+              target="_blank"
+              to="https://www.linkedin.com/in/mostafiz04"
+            >
               <Linkedin />
             </Link>
-            <Link target="_blank" to="https://github.com/Mostafiz002/">
+            <Link
+              className="hover:scale-110 transition-transform hover:text-[#ffffffbd]"
+              target="_blank"
+              to="https://github.com/Mostafiz002/"
+            >
               <Github />
             </Link>
           </div>

@@ -14,3 +14,32 @@ a.active {
   color: transparent;
   border-bottom: #632ee3 solid 2px;
 }
+
+.swal-confirm-btn {
+  background-color: #6734e4 !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 10px 22px !important;
+  border-radius: 6px !important;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.swal-cancel-btn {
+  background-color: #d33 !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 10px 22px !important;
+  border-radius: 6px !important;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.swal-actions {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 24px !important; /* 24px space between buttons */
+}
+

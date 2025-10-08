@@ -2,13 +2,55 @@ import React from "react";
 import downloadImg from "../assets/icon-downloads.png";
 import ratingImg from "../assets/icon-ratings.png";
 import { removeFrominstalled } from "../utils/localStorage";
-import { toast, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
 
 const InstalledApp = ({ app, setInstalledApps }) => {
   const handleUninstall = () => {
-    toast.success("App Uninstalled Successfully 🥳");
-    removeFrominstalled(app.id);
-    setInstalledApps((prev) => prev.filter((a) => a.id !== app.id));
+       Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Yes, uninstall it!",
+      cancelButtonText: "Cancel",
+      reverseButtons: true,
+      customClass: {
+        confirmButton: "swal-confirm-btn",
+        cancelButton: "swal-cancel-btn",
+        actions: "swal-actions",
+      },
+      buttonsStyling: false,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        removeFrominstalled(app.id);
+        setInstalledApps((prev) => prev.filter((a) => a.id !== app.id));
+        Swal.fire({
+          title: "Uninstalled!",
+          text: "Your app has been uninstalled.",
+          icon: "success",
+          customClass: {
+            confirmButton: "swal-confirm-btn",
+            actions: "swal-actions",
+          },
+          buttonsStyling: false,
+        });
+      } else if (result.dismiss === Swal.DismissReason.cancel) {
+        Swal.fire({
+          title: "Cancelled",
+          text: "Your app is safe :)",
+          icon: "error",
+          customClass: {
+            confirmButton: "swal-confirm-btn",
+            actions: "swal-actions",
+          },
+          buttonsStyling: false,
+        });
+      }
+    });
   };
   return (
     <div className="w-full flex flex-col gap-6 md:gap-1 md:flex-row justify-between items-start md:items-center p-4 rounded-2xl text-[#090909] text-[18px] bg-[#e8e8e8] border border-[#e8e8e8] transition-all duration-300 shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] hover:border-white">
