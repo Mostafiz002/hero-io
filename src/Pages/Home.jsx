@@ -29,7 +29,7 @@ const Home = () => {
           <Link
             to="/apps"
             
-            className="hidden py-3 px-10 rounded-sm cursor-pointer lg:flex gap-2 items-center justify-center font-medium text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] transition-all duration-300 hover:scale-103  hover:from-[#7438ed] hover:to-[#8c5dc9]"
+            className="hidden py-3 px-8 rounded-sm cursor-pointer lg:flex gap-2 items-center justify-center font-medium text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] transition duration-300 ease-in-out hover:scale-103  hover:from-[#7438ed] hover:to-[#8c5dc9]"
           >
            <ArrowUpRight size={18} strokeWidth={1.85} /> Show All
           </Link>

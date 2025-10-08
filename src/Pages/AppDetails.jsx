@@ -1,9 +1,21 @@
 import React from "react";
 import { useParams } from "react-router";
 import useApps from "../Hooks/useApps";
-import downloadImg from '../assets/icon-downloads.png'
-import reviewImg from '../assets/icon-review.png'
-import ratingImg from '../assets/icon-ratings.png'
+import downloadImg from "../assets/icon-downloads.png";
+import reviewImg from "../assets/icon-review.png";
+import ratingImg from "../assets/icon-ratings.png";
+import {
+  ComposedChart,
+  Line,
+  Area,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -35,30 +47,60 @@ const AppDetails = () => {
           </p>
           <div className="flex flex-col md:flex-row gap-20 mt-8">
             <div>
-                <img className="w-9 h-9" src={downloadImg} alt="" />
-                <p className="text-[#001931] my-2">Downloads</p>
-                <p className="text-[#001931] font-bold text-4xl">{app.downloads}M</p>
+              <img className="w-9 h-9" src={downloadImg} alt="" />
+              <p className="text-[#001931] my-2">Downloads</p>
+              <p className="text-[#001931] font-bold text-4xl">
+                {app.downloads}M
+              </p>
             </div>
             <div>
-                <img className="w-9 h-9" src={ratingImg} alt="" />
-                <p className="text-[#001931] my-2">Average Ratings</p>
-                <p className="text-[#001931] font-bold text-4xl">{app.ratingAvg}</p>
+              <img className="w-9 h-9" src={ratingImg} alt="" />
+              <p className="text-[#001931] my-2">Average Ratings</p>
+              <p className="text-[#001931] font-bold text-4xl">
+                {app.ratingAvg}
+              </p>
             </div>
             <div>
-                <img className="w-9 h-9" src={reviewImg} alt="" />
-                <p className="text-[#001931] my-2">Total Reviews</p>
-                <p className="text-[#001931] font-bold text-4xl">{app.reviews}K</p>
+              <img className="w-9 h-9" src={reviewImg} alt="" />
+              <p className="text-[#001931] my-2">Total Reviews</p>
+              <p className="text-[#001931] font-bold text-4xl">
+                {app.reviews}K
+              </p>
             </div>
           </div>
-          
+          <div>
+            <button className="mt-10 py-3 px-5 text-white bg-[#00D390] rounded-sm hover:bg-[#02c587] transition duration-300 ease-in-out cursor-pointer">
+              Install Now ({app.size} MB)
+            </button>
+          </div>
         </div>
       </div>
-      <div>
-
+      <div className="pb-10 mb-10 border-b border-[#001931]/20">
+        <h5 className="mb-6 text-lg font-medium text-[#001931]/80">Ratings</h5>
+        <div className="w-full h-80">
+          <ResponsiveContainer width="100%" height="100%">
+            <ComposedChart
+              layout="vertical"
+              data={[...app.ratings].reverse()}
+              margin={{ top: 20, bottom: 20 }}
+            >
+              <CartesianGrid stroke="#f5f5f5" />
+              <XAxis type="number" />
+              <YAxis dataKey="name" type="category" />
+              <Tooltip />
+              <Bar dataKey="count" barSize={30} fill="#6834e4" />
+            </ComposedChart>
+          </ResponsiveContainer>
+        </div>
       </div>
+
       <div>
-        <h5 className="mb-6 text-lg  font-medium text-[#001931]/80">Description</h5>
-        <p className="text-[#627382] text-[12px] md:text-base">{app.description}</p>
+        <h5 className="mb-6 text-lg  font-medium text-[#001931]/80">
+          Description
+        </h5>
+        <p className="text-[#627382] text-[12px] md:text-base">
+          {app.description}
+        </p>
       </div>
     </section>
   );
