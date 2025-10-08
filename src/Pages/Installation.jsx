@@ -5,6 +5,17 @@ import { Link } from "react-router";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState(() => loadinstalled());
+  const [sortOrder, setSortOrder] = useState("none");
+
+  const sortedItem = (() => {
+    if(sortOrder === 'price-asc'){
+      return [...installedApps].sort((a,b)=> a.downloads - b.downloads)
+    }else if(sortOrder === 'price-desc'){
+      return [...installedApps].sort((a,b)=> b.downloads - a.downloads)
+    }else{
+      return installedApps
+    }
+  })();
 
   return (
     <section className="py-20 px-6  max-w-[1448px] mx-auto">
@@ -15,25 +26,31 @@ const Installation = () => {
         Explore All Trending Apps on the Market developed by us
       </p>
       <div className="flex items-center justify-between mb-6">
-        <p>({installedApps.length}) App Installed</p>
-        <select defaultValue="Pick a color" className="select bg-transparent">
-          <option disabled={true}>Pick a color</option>
-          <option>Crimson</option>
-          <option>Amber</option>
-          <option>Velvet</option>
+        <p>({sortedItem.length}) App Installed</p>
+        <select
+          value={sortOrder}
+          onChange={(e) => setSortOrder(e.target.value)}
+          className="select bg-transparent"
+        >
+          <option value="none">Sort by download</option>
+          <option value="price-asc">Low-&gt;High</option>
+          <option value="price-desc">High-&gt;Low</option>
         </select>
       </div>
-      {installedApps.length === 0 && (
+      {sortedItem.length === 0 && (
         <div className="text-center flex flex-col items-center justify-center gap-6">
           <p className="text-center text-3xl mt-10">No apps found</p>
-          <Link to='/apps' className="hidden py-3 px-10 rounded-sm cursor-pointer lg:flex gap-2 items-center justify-center font-medium text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] transition-all duration-300 hover:scale-103  hover:from-[#7438ed] hover:to-[#8c5dc9]">
+          <Link
+            to="/apps"
+            className="hidden py-3 px-10 rounded-sm cursor-pointer lg:flex gap-2 items-center justify-center font-medium text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] transition-all duration-300 hover:scale-103  hover:from-[#7438ed] hover:to-[#8c5dc9]"
+          >
             All Apps
           </Link>
         </div>
       )}
       <div className="flex flex-col gap-6">
-        {installedApps.map((app) => (
-          <InstalledApp setInstalledApps={setInstalledApps} app={app} />
+        {sortedItem.map((app) => (
+          <InstalledApp key={app.id} setInstalledApps={setInstalledApps} app={app} />
         ))}
       </div>
     </section>

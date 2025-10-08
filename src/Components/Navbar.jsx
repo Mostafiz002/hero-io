@@ -8,7 +8,7 @@ const Navbar = () => {
     <>
       <NavLink
         to="/"
-        className=" hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:bg-clip-text hover:text-transparent border-b-2 border-transparent hover:border-b-2 hover:border-[#632EE3]"
+        className="hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:bg-clip-text hover:text-transparent border-b-2 border-transparent hover:border-b-2 hover:border-[#632EE3]"
       >
         Home
       </NavLink>
@@ -28,7 +28,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-[#e8e8e8] border-b border-gray-300">
+    <div className="bg-[#e8e8e8] border-b border-gray-300 sticky top-0 z-50">
       <div className="navbar py-4 bg-[#e8e8e8]  px-6  max-w-[1448px] mx-auto">
         <div className="navbar-start">
           <Link

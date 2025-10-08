@@ -5,7 +5,7 @@ import { Link } from "react-router";
 
 const AppCard = ({ app }) => {
   return (
-    <Link to={`/app/${app.id}`} className="p-4 rounded-2xl text-[#090909] text-[18px] bg-[#e8e8e8] cursor-pointer border border-[#e8e8e8] transition-all duration-300 shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] hover:border-white">
+    <Link  to={`/app/${app.id}`} className="p-4 rounded-2xl text-[#090909] text-[18px] bg-[#e8e8e8] cursor-pointer border border-[#e8e8e8] transition-all duration-300 shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] hover:border-white">
       <img
         className="h-[300px] w-full rounded-lg object-cover"
         src={app.image}
