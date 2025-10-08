@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import useApps from "../Hooks/useApps";
 import AppCard from "../Components/AppCard";
+import { Link } from "react-router";
+import { ArrowUpRight } from "lucide-react";
 
 const Apps = () => {
-    const {apps} = useApps()
+  const { apps } = useApps();
+  const [search, setSearch] = useState("");
+  const term = search.trim().toLocaleLowerCase();
+  const searchedProducts = term
+    ? apps.filter((app) => app.title.toLocaleLowerCase().includes(term))
+    : apps;
+
   return (
     <div className="py-20 px-6  max-w-[1448px] mx-auto">
       <h2 className="text-center text-2xl md:text-4xl font-semibold">
@@ -13,7 +21,7 @@ const Apps = () => {
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
       <div className="flex items-center justify-between mb-6">
-        <p>(132) Apps Found</p>
+        <p>({searchedProducts.length}) Apps Found</p>
         <label className="input bg-transparent">
           <svg
             className="h-[1em] opacity-50"
@@ -31,11 +39,27 @@ const Apps = () => {
               <path d="m21 21-4.3-4.3"></path>
             </g>
           </svg>
-          <input type="search" className="grow" placeholder="Search" />
+          <input
+            type="search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="grow"
+            placeholder="Search"
+          />
         </label>
       </div>
+      {searchedProducts.length === 0 && (
+        <div className="text-center flex flex-col items-center justify-center gap-6">
+          <p className="text-center text-3xl mt-10">No apps found</p>
+          <button onClick={()=>setSearch("")} className="hidden py-3 px-10 rounded-sm cursor-pointer lg:flex gap-2 items-center justify-center font-medium text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] transition-all duration-300 hover:scale-103  hover:from-[#7438ed] hover:to-[#8c5dc9]">
+            Show All Apps
+          </button>
+        </div>
+      )}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {apps.map(app => <AppCard key={app.id} app={app}></AppCard>)}
+        {searchedProducts.map((app) => (
+          <AppCard key={app.id} app={app}></AppCard>
+        ))}
       </div>
     </div>
   );
