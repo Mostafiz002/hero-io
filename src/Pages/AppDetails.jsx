@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import downloadImg from "../assets/icon-downloads.png";
@@ -16,14 +16,21 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { toast, ToastContainer } from "react-toastify";
 
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, loading } = useApps();
+  const [installed, setInstalled] = useState(false);
 
   const app = apps.find((a) => a.id === Number(id));
 
   if (loading) return <p>Loading.......</p>;
+
+  const handleInstall = () => {
+    installed || toast.success("App Installed Successfully 🥳");
+    setInstalled(true);
+  };
 
   return (
     <section className="py-20 px-6  max-w-[1448px] mx-auto">
@@ -69,8 +76,14 @@ const AppDetails = () => {
             </div>
           </div>
           <div>
-            <button className="mt-10 py-3 px-5 text-white bg-[#00D390] rounded-sm hover:bg-[#02c587] transition duration-300 ease-in-out cursor-pointer">
-              Install Now ({app.size} MB)
+            <button
+              onClick={() => handleInstall()}
+              disabled={installed}
+              className="mt-10 py-3 px-5 text-white bg-[#00D390] rounded-sm hover:bg-[#02c587] transition duration-300 ease-in-out cursor-pointer"
+            >
+              {installed === false
+                ? `Install Now (${app.size} MB)`
+                : "Installed"}
             </button>
           </div>
         </div>
@@ -82,7 +95,7 @@ const AppDetails = () => {
             <ComposedChart
               layout="vertical"
               data={[...app.ratings].reverse()}
-              margin={{ top: 20, bottom: 20 }}
+              margin={{ top: 20,  bottom: 20 }}
             >
               <CartesianGrid stroke="#f5f5f5" />
               <XAxis type="number" />
@@ -102,6 +115,18 @@ const AppDetails = () => {
           {app.description}
         </p>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={4000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </section>
   );
 };

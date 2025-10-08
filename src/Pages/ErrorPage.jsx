@@ -6,7 +6,7 @@ import Footer from "../Components/Footer";
 
 const ErrorPage = () => {
   return (
-    <div>
+    <section>
       <Navbar></Navbar>
       <div className="flex flex-col justify-center items-center min-h-screen gap-10 px-6 py-12">
         <img src={errorImg} alt="" />
@@ -24,7 +24,7 @@ const ErrorPage = () => {
         </div>
       </div>
       <Footer/>
-    </div>
+    </section>
   );
 };
 
