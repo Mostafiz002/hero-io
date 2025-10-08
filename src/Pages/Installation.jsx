@@ -1,11 +1,43 @@
-import React from 'react';
+import React, { useState } from "react";
+import { loadinstalled } from "../utils/localStorage";
+import InstalledApp from "../Components/InstalledApp";
+import { Link } from "react-router";
 
 const Installation = () => {
-    return (
-        <div>
-            Installation
+  const [installedApps, setInstalledApps] = useState(() => loadinstalled());
+
+  return (
+    <section className="py-20 px-6  max-w-[1448px] mx-auto">
+      <h2 className="text-center text-2xl md:text-4xl font-semibold">
+        Your Installed Apps
+      </h2>
+      <p className="text-[#627382] text-[12px] md:text-base text-center w-full mt-4 mb-10">
+        Explore All Trending Apps on the Market developed by us
+      </p>
+      <div className="flex items-center justify-between mb-6">
+        <p>({installedApps.length}) App Installed</p>
+        <select defaultValue="Pick a color" className="select bg-transparent">
+          <option disabled={true}>Pick a color</option>
+          <option>Crimson</option>
+          <option>Amber</option>
+          <option>Velvet</option>
+        </select>
+      </div>
+      {installedApps.length === 0 && (
+        <div className="text-center flex flex-col items-center justify-center gap-6">
+          <p className="text-center text-3xl mt-10">No apps found</p>
+          <Link to='/apps' className="hidden py-3 px-10 rounded-sm cursor-pointer lg:flex gap-2 items-center justify-center font-medium text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] transition-all duration-300 hover:scale-103  hover:from-[#7438ed] hover:to-[#8c5dc9]">
+            All Apps
+          </Link>
         </div>
-    );
+      )}
+      <div className="flex flex-col gap-6">
+        {installedApps.map((app) => (
+          <InstalledApp setInstalledApps={setInstalledApps} app={app} />
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default Installation;

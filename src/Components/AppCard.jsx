@@ -11,7 +11,7 @@ const AppCard = ({ app }) => {
         src={app.image}
         alt=""
       />
-      <h3 className="my-4 text-lg  font-medium text-[#001931]">{app.title}</h3>
+      <h3 className="my-4 text-base  font-medium text-[#001931]/80">{app.title}</h3>
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-2 rounded-sm bg-[#F1F5E8] px-3 py-1.5">
           <img className="w-[14px]" src={downloadImg} alt="" />

@@ -17,6 +17,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { toast, ToastContainer } from "react-toastify";
+import { updateList } from "../utils/localStorage";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -27,9 +28,10 @@ const AppDetails = () => {
 
   if (loading) return <p>Loading.......</p>;
 
-  const handleInstall = () => {
+  const handleInstall = (id) => {
     installed || toast.success("App Installed Successfully 🥳");
     setInstalled(true);
+    updateList(id)
   };
 
   return (
@@ -77,7 +79,7 @@ const AppDetails = () => {
           </div>
           <div>
             <button
-              onClick={() => handleInstall()}
+              onClick={() => handleInstall(app)}
               disabled={installed}
               className="mt-10 py-3 px-5 text-white bg-[#00D390] rounded-sm hover:bg-[#02c587] transition duration-300 ease-in-out cursor-pointer"
             >
@@ -115,18 +117,7 @@ const AppDetails = () => {
           {app.description}
         </p>
       </div>
-      <ToastContainer
-        position="top-right"
-        autoClose={4000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick={false}
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
+      
     </section>
   );
 };
