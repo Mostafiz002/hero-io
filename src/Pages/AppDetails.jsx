@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import downloadImg from "../assets/icon-downloads.png";
@@ -18,11 +18,26 @@ import {
 } from "recharts";
 import { toast, ToastContainer } from "react-toastify";
 import { updateList } from "../utils/localStorage";
+import Loader from "../Components/Loader";
 
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, loading } = useApps();
   const [installed, setInstalled] = useState(false);
+  const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoader(false), 1200);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loader) {
+    return (
+      <div className=" inset-0 h-screen fixed -top-20  flex items-center justify-center z-50">
+        <Loader />
+      </div>
+    );
+  }
 
   const app = apps.find((a) => a.id === Number(id));
 
@@ -31,7 +46,7 @@ const AppDetails = () => {
   const handleInstall = (id) => {
     installed || toast.success("App Installed Successfully 🥳");
     setInstalled(true);
-    updateList(id)
+    updateList(id);
   };
 
   return (
@@ -97,7 +112,7 @@ const AppDetails = () => {
             <ComposedChart
               layout="vertical"
               data={[...app.ratings].reverse()}
-              margin={{ top: 20,  bottom: 20 }}
+              margin={{ top: 20, bottom: 20 }}
             >
               <CartesianGrid stroke="#f5f5f5" />
               <XAxis type="number" />
@@ -117,7 +132,6 @@ const AppDetails = () => {
           {app.description}
         </p>
       </div>
-      
     </section>
   );
 };

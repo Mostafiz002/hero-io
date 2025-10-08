@@ -1,19 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { loadinstalled } from "../utils/localStorage";
 import InstalledApp from "../Components/InstalledApp";
 import { Link } from "react-router";
+import Loader from "../Components/Loader";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState(() => loadinstalled());
   const [sortOrder, setSortOrder] = useState("none");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1200);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className=" inset-0 h-screen fixed -top-20 flex items-center justify-center z-50">
+        <Loader />
+      </div>
+    );
+  }
 
   const sortedItem = (() => {
-    if(sortOrder === 'price-asc'){
-      return [...installedApps].sort((a,b)=> a.downloads - b.downloads)
-    }else if(sortOrder === 'price-desc'){
-      return [...installedApps].sort((a,b)=> b.downloads - a.downloads)
-    }else{
-      return installedApps
+    if (sortOrder === "price-asc") {
+      return [...installedApps].sort((a, b) => a.downloads - b.downloads);
+    } else if (sortOrder === "price-desc") {
+      return [...installedApps].sort((a, b) => b.downloads - a.downloads);
+    } else {
+      return installedApps;
     }
   })();
 
@@ -50,7 +65,11 @@ const Installation = () => {
       )}
       <div className="flex flex-col gap-6">
         {sortedItem.map((app) => (
-          <InstalledApp key={app.id} setInstalledApps={setInstalledApps} app={app} />
+          <InstalledApp
+            key={app.id}
+            setInstalledApps={setInstalledApps}
+            app={app}
+          />
         ))}
       </div>
     </section>

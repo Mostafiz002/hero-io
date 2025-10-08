@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Banner from "../Components/Banner";
 import useApps from "../Hooks/useApps";
 import AppCard from "../Components/AppCard";
 import { Link } from "react-router";
 import { ArrowUpRight } from "lucide-react";
+import Loader from "../Components/Loader";
 
 const Home = () => {
   const { apps } = useApps();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1200);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className=" inset-0 h-screen fixed  -top-20  flex items-center justify-center z-50">
+        <Loader />
+      </div>
+    );
+  }
 
   const trendingApps = apps.slice(0, 8);
 
@@ -28,10 +43,9 @@ const Home = () => {
         <div className="mt-12">
           <Link
             to="/apps"
-            
             className="hidden py-3 px-8 rounded-sm cursor-pointer lg:flex gap-2 items-center justify-center font-medium text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] transition duration-300 ease-in-out hover:scale-103  hover:from-[#7438ed] hover:to-[#8c5dc9]"
           >
-           <ArrowUpRight size={18} strokeWidth={1.85} /> Show All
+            <ArrowUpRight size={18} strokeWidth={1.85} /> Show All
           </Link>
         </div>
       </div>
