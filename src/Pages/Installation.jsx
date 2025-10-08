@@ -16,7 +16,7 @@ const Installation = () => {
 
   if (loading) {
     return (
-      <div className=" inset-0 h-screen fixed -top-20 flex items-center justify-center z-50">
+      <div className=" inset-0 h-screen  relative -top-20 mb-40  flex items-center justify-center z-50">
         <Loader />
       </div>
     );

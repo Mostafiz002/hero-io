@@ -28,7 +28,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-[#e8e8e8] border-b border-gray-300 sticky top-0 z-50">
+    <div className="bg-[#e8e8e8] border-b border-gray-300 z-50">
       <div className="navbar py-4 bg-[#e8e8e8]  px-6  max-w-[1448px] mx-auto">
         <div className="navbar-start">
           <Link
@@ -45,7 +45,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <div className="dropdown dropdown-left dropdown-bottom ">
+          <div className="dropdown dropdown-left ">
             <div
               tabIndex={0}
               role="button"
@@ -55,7 +55,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow  gap-2 -left-45 right-auto"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-100 mt-3 w-52 p-2 shadow  gap-2 -left-53 right-auto "
             >
               {links}
               <Link

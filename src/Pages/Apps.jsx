@@ -29,7 +29,7 @@ const Apps = () => {
 
   if (loading) {
     return (
-      <div className="inset-0 h-screen fixed -top-20 flex items-center justify-center z-50">
+      <div className="inset-0 h-screen relative -top-20 mb-40 flex items-center justify-center z-50">
         <Loader />
       </div>
     );
@@ -49,8 +49,8 @@ const Apps = () => {
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
 
-      <div className="flex items-center justify-between mb-6">
-        <p>({searchedProducts.length}) Apps Found</p>
+      <div className="flex flex-col md:flex-row gap-4 items-center justify-between mb-6">
+        <p className="">({searchedProducts.length}) Apps Found</p>
         <label className="input bg-transparent flex items-center gap-2">
           <svg
             className="h-[1em] opacity-50"

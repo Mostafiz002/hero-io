@@ -33,7 +33,7 @@ const AppDetails = () => {
 
   if (loader) {
     return (
-      <div className=" inset-0 h-screen fixed -top-20  flex items-center justify-center z-50">
+      <div className=" inset-0 h-screen  relative -top-20 mb-40  flex items-center justify-center z-50">
         <Loader />
       </div>
     );
@@ -69,7 +69,7 @@ const AppDetails = () => {
               {app.companyName}
             </span>
           </p>
-          <div className="flex flex-col md:flex-row gap-20 mt-8">
+          <div className="flex flex-row gap-4 justify-between md:justify-start lg:gap-20 mt-8">
             <div>
               <img className="w-9 h-9" src={downloadImg} alt="" />
               <p className="text-[#001931] my-2">Downloads</p>

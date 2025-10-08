@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Banner = () => {
   return (
     <div>
-      <div className="flex justify-center items-center flex-col px-6">
+      <div className="flex justify-center items-center flex-col px-6 z-8">
         <motion.h1
           className="text-center mt-20 text-4xl md:text-7xl text-[#001931] font-semibold"
           initial={{ opacity: 0, y: 50 }}
@@ -43,7 +43,7 @@ const Banner = () => {
           <Link
             to="https://play.google.com/store/"
             target="_blank"
-            className="flex items-center gap-2 text-[#090909] py-[0.7em] px-[1.7em] text-[18px] rounded-md bg-[#e8e8e8] cursor-pointer border border-[#e8e8e8] transition-all duration-300 shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] hover:border-white"
+            className="flex items-center gap-2 text-[#090909] py-[0.7em] px-[1.7em] text-sm md:text-[18px] rounded-md bg-[#e8e8e8] cursor-pointer border border-[#e8e8e8] transition-all duration-300 shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] hover:border-white"
           >
             <img className="w-6" src={playstoreImg} alt="" />
             Google Play
@@ -51,7 +51,7 @@ const Banner = () => {
           <Link
             to="https://www.apple.com/app-store/"
             target="_blank"
-            className="flex items-center gap-2 text-[#090909] py-[0.7em] px-[1.7em] text-[18px] rounded-md bg-[#e8e8e8] cursor-pointer border border-[#e8e8e8] transition-all duration-300 shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] hover:border-white"
+            className="flex items-center gap-2 text-[#090909] py-[0.7em] px-[1.7em]  text-sm md:text-[18px] rounded-md bg-[#e8e8e8] cursor-pointer border border-[#e8e8e8] transition-all duration-300 shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] hover:border-white"
           >
             <img className="w-6" src={appstoreImg} alt="" />
             App Store
