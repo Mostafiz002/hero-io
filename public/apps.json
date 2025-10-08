@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/35NgQprZ/3331057.jpg",
+    "title": "TaskMaster: Organize Your Tasks Efficiently Every Day",
+    "companyName": "Prodify Inc",
+    "id": 1,
+    "description": "A productivity app that helps manage tasks efficiently.",
+    "size": 45,
+    "reviews": 1200,
+    "ratingAvg": 4.5,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 620 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/qfWBQzB/medical-banner-with-doctor-holding-stethoscope.jpg",
+    "title": "FitLife: Track and Improve Your Fitness Daily",
+    "companyName": "HealthTech",
+    "id": 2,
+    "description": "Track your workouts and stay motivated with FitLife.",
+    "size": 60,
+    "reviews": 2100,
+    "ratingAvg": 4.7,
+    "downloads": 12,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1240 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/H0Jz9Pt/2942520.jpg",
+    "title": "PhotoMagic: Create Stunning Photo Edits Quickly",
+    "companyName": "SnapSoft",
+    "id": 3,
+    "description": "Edit your photos with magic filters and effects.",
+    "size": 75,
+    "reviews": 3400,
+    "ratingAvg": 4.3,
+    "downloads": 3,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 1680 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HpG2JgSc/demo-app-1.webp",
+    "title": "BudgetBuddy: Manage Your Expenses and Savings Easily",
+    "companyName": "FinancePro",
+    "id": 4,
+    "description": "Manage your expenses and savings easily.",
+    "size": 50,
+    "reviews": 1800,
+    "ratingAvg": 4.6,
+    "downloads": 19,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 550 },
+      { "name": "5 star", "count": 1050 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/B2xWSsNk/demo-app-2.webp",
+    "title": "MindRelax: Meditation Exercises for a Calm Mind",
+    "companyName": "WellnessCorp",
+    "id": 5,
+    "description": "Meditation and relaxation exercises for a calm mind.",
+    "size": 65,
+    "reviews": 2500,
+    "ratingAvg": 4.8,
+    "downloads": 2,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1665 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5hcLY5Xw/demo-app-3.webp",
+    "title": "RecipeHub: Discover and Share Delicious Recipes",
+    "companyName": "Foodie Labs",
+    "id": 6,
+    "description": "Discover and share delicious recipes.",
+    "size": 80,
+    "reviews": 2900,
+    "ratingAvg": 4.4,
+    "downloads": 15,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1270 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5g7HXcZ3/demo-app-4.webp",
+    "title": "TravelMate: Plan Your Trips and Explore New Destinations",
+    "companyName": "Wanderlust Inc",
+    "id": 7,
+    "description": "Plan your trips and explore new destinations.",
+    "size": 95,
+    "reviews": 3100,
+    "ratingAvg": 4.5,
+    "downloads": 9,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 1490 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/cS3wrphF/demo-app-5.webp",
+    "title": "Learnify: Learn New Skills Anytime From Anywhere",
+    "companyName": "EduTech",
+    "id": 8,
+    "description": "Learn new skills and languages anytime, anywhere.",
+    "size": 120,
+    "reviews": 4500,
+    "ratingAvg": 4.6,
+    "downloads": 1,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2570 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/JFQckc9f/demo-app-6.webp",
+    "title": "WeatherNow: Accurate Weather Forecasts Instantly",
+    "companyName": "SkyCast",
+    "id": 9,
+    "description": "Get accurate weather forecasts in real-time.",
+    "size": 55,
+    "reviews": 2200,
+    "ratingAvg": 4.3,
+    "downloads": 17,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 970 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/ynyyXrzB/2962.jpg",
+    "title": "MusicVibe: Stream Your Favorite Songs Effortlessly",
+    "companyName": "SoundWave",
+    "id": 10,
+    "description": "Stream and enjoy your favorite music anytime.",
+    "size": 150,
+    "reviews": 5200,
+    "ratingAvg": 4.7,
+    "downloads": 11,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 3320 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/9HSc4Qjr/photo-1568570125654-2fca9b2116b4.jpg",
+    "title": "ShopEasy: Enjoy a Seamless Shopping Experience Today",
+    "companyName": "RetailTech",
+    "id": 11,
+    "description": "A seamless shopping experience for all your needs.",
+    "size": 110,
+    "reviews": 3100,
+    "ratingAvg": 4.4,
+    "downloads": 14,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 1450 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/Mxg0xRXw",
+    "title": "NewsFlash: Stay Updated With the Latest Headlines",
+    "companyName": "MediaTech",
+    "id": 12,
+    "description": "Stay updated with the latest news from around the world.",
+    "size": 70,
+    "reviews": 2600,
+    "ratingAvg": 4.5,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1310 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/Mxg0xRXw",
+    "title": "FitMeal: Healthy Meal Plans for Your Daily Nutrition",
+    "companyName": "NutriTech",
+    "id": 13,
+    "description": "Healthy meal plans and nutrition tracking.",
+    "size": 65,
+    "reviews": 1900,
+    "ratingAvg": 4.6,
+    "downloads": 13,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1200 }
+    ]
+  },
+  {
+    "image": "app14.png",
+    "title": "TravelLog: Document and Share Your Travel Adventures",
+    "companyName": "WanderTech",
+    "id": 14,
+    "description": "Document and share your travel adventures.",
+    "size": 80,
+    "reviews": 1500,
+    "ratingAvg": 4.4,
+    "downloads": 8,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 830 }
+    ]
+  },
+  {
+    "image": "app15.png",
+    "title": "LearnCode: Interactive Coding Challenges to Boost Skills",
+    "companyName": "CodeLabs",
+    "id": 15,
+    "description": "Learn coding interactively with fun challenges.",
+    "size": 130,
+    "reviews": 4800,
+    "ratingAvg": 4.7,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 3160 }
+    ]
+  },
+  {
+    "image": "app16.png",
+    "title": "PhotoEditPro: Professional Photo Editing Made Easy",
+    "companyName": "SnapTech",
+    "id": 16,
+    "description": "Professional photo editing tools at your fingertips.",
+    "size": 140,
+    "reviews": 3200,
+    "ratingAvg": 4.5,
+    "downloads": 16,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1670 }
+    ]
+  },
+  {
+    "image": "app17.png",
+    "title": "MindFocus: Improve Your Concentration and Focus",
+    "companyName": "WellMind",
+    "id": 17,
+    "description": "Improve concentration and focus with guided exercises.",
+    "size": 55,
+    "reviews": 2100,
+    "ratingAvg": 4.6,
+    "downloads": 4,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1300 }
+    ]
+  },
+  {
+    "image": "app18.png",
+    "title": "ShopSmart: All-in-One Smart Shopping Deals and Coupons",
+    "companyName": "RetailPro",
+    "id": 18,
+    "description": "Smart shopping deals and coupons all in one app.",
+    "size": 90,
+    "reviews": 2800,
+    "ratingAvg": 4.4,
+    "downloads": 18,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1390 }
+    ]
+  },
+  {
+    "image": "app19.png",
+    "title": "WeatherPro: Professional Forecasts and Weather Alerts",
+    "companyName": "ClimateTech",
+    "id": 19,
+    "description": "Professional weather forecasts and alerts.",
+    "size": 60,
+    "reviews": 2300,
+    "ratingAvg": 4.3,
+    "downloads": 10,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 970 }
+    ]
+  },
+  {
+    "image": "app20.png",
+    "title": "MusicFlow: Stream Music and Create Your Personal Playlists",
+    "companyName": "SoundTech",
+    "id": 20,
+    "description": "Stream music and create your personal playlists.",
+    "size": 150,
+    "reviews": 5400,
+    "ratingAvg": 4.7,
+    "downloads": 20,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 3520 }
+    ]
+  }
+]
