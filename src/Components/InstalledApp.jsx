@@ -35,7 +35,7 @@ const InstalledApp = ({ app, setInstalledApps }) => {
       <div>
         <button
           onClick={handleUninstall}
-          className=" py-2 px-5 text-white bg-[#00D390] rounded-sm hover:bg-[#02c587] transition duration-300 ease-in-out cursor-pointer"
+          className=" flex items-center gap-2 text-[#090909] py-[0.7em] px-[1.7em] text-[18px] rounded-md bg-[#e8e8e8] cursor-pointer border border-[#e8e8e8] transition-all duration-300 shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] hover:border-white"
         >
           Uninstall
         </button>
