@@ -4,9 +4,9 @@
     "title": "TaskMaster: Organize Your Tasks Efficiently Every Day",
     "companyName": "Prodify Inc",
     "id": 1,
-    "description": "A productivity app that helps manage tasks efficiently.",
+    "description": "TaskMaster helps you stay on top of your daily tasks effortlessly. Organize your work, school, or personal projects in one place. Set reminders and never miss a deadline. Create priorities and focus on what truly matters. Track your progress and celebrate small victories. Collaborate with friends or colleagues easily. Customize your workflow to match your style. Enjoy a clean, intuitive interface that’s simple to use. Sync across devices seamlessly. TaskMaster turns productivity into a fun, stress-free experience.",
     "size": 45,
-    "reviews": 1200,
+    "reviews": 12,
     "ratingAvg": 4.5,
     "downloads": 7,
     "ratings": [
@@ -18,13 +18,13 @@
     ]
   },
   {
-    "image": "https://i.ibb.co.com/qfWBQzB/medical-banner-with-doctor-holding-stethoscope.jpg",
+    "image": "https://i.ibb.co.com/jv5k16sb/medical-banner-with-doctor-holding-stethoscope-min.jpg",
     "title": "FitLife: Track and Improve Your Fitness Daily",
     "companyName": "HealthTech",
     "id": 2,
-    "description": "Track your workouts and stay motivated with FitLife.",
+    "description": "FitLife makes staying fit fun and simple. Track your workouts and monitor progress effortlessly. Set fitness goals and challenge yourself daily. Follow guided exercises tailored to your needs. Monitor your nutrition and daily activity. Join challenges and connect with friends for extra motivation. Receive daily tips to improve your health. Log achievements and celebrate milestones. Get reminders to keep moving throughout the day. FitLife inspires you to make fitness a lifestyle, not a chore.",
     "size": 60,
-    "reviews": 2100,
+    "reviews": 21,
     "ratingAvg": 4.7,
     "downloads": 12,
     "ratings": [
@@ -36,13 +36,13 @@
     ]
   },
   {
-    "image": "https://i.ibb.co.com/H0Jz9Pt/2942520.jpg",
+    "image": "https://i.ibb.co.com/PZHp5d4Q/2942520-min.jpg",
     "title": "PhotoMagic: Create Stunning Photo Edits Quickly",
     "companyName": "SnapSoft",
     "id": 3,
-    "description": "Edit your photos with magic filters and effects.",
+    "description": "PhotoMagic brings your photos to life with creative tools. Apply stunning filters and magical effects in seconds. Crop, rotate, and adjust your photos easily. Remove unwanted elements with a single tap. Create collages and share them with friends. Experiment with colors, textures, and overlays. Enjoy a user-friendly interface designed for fun and speed. Save high-quality images without hassle. Keep all your edits organized in one place. PhotoMagic makes every photo a masterpiece you’ll love.",
     "size": 75,
-    "reviews": 3400,
+    "reviews": 34,
     "ratingAvg": 4.3,
     "downloads": 3,
     "ratings": [
@@ -54,13 +54,13 @@
     ]
   },
   {
-    "image": "https://i.ibb.co.com/HpG2JgSc/demo-app-1.webp",
+    "image": "https://i.ibb.co/HpG2JgSc/demo-app-1.webp",
     "title": "BudgetBuddy: Manage Your Expenses and Savings Easily",
     "companyName": "FinancePro",
     "id": 4,
-    "description": "Manage your expenses and savings easily.",
+    "description": "BudgetBuddy helps you take control of your finances. Track expenses and see exactly where your money goes. Create budgets for each category effortlessly. Set savings goals and monitor progress daily. Receive notifications for overspending. Analyze spending trends and make smarter decisions. Share financial plans with family if needed. Secure your data with advanced protection. Enjoy a simple and intuitive design. BudgetBuddy makes managing money stress-free and even fun.",
     "size": 50,
-    "reviews": 1800,
+    "reviews": 18,
     "ratingAvg": 4.6,
     "downloads": 19,
     "ratings": [
@@ -72,13 +72,13 @@
     ]
   },
   {
-    "image": "https://i.ibb.co.com/B2xWSsNk/demo-app-2.webp",
+    "image": "https://i.ibb.co/B2xWSsNk/demo-app-2.webp",
     "title": "MindRelax: Meditation Exercises for a Calm Mind",
     "companyName": "WellnessCorp",
     "id": 5,
-    "description": "Meditation and relaxation exercises for a calm mind.",
+    "description": "MindRelax is your personal meditation companion. Follow guided meditation exercises for a calm mind. Learn breathing techniques to reduce stress. Track your daily mindfulness habits. Listen to relaxing music and nature sounds. Join meditation challenges with friends. Set reminders to maintain consistency. Improve focus, sleep, and emotional balance. Keep a journal to track progress. MindRelax makes relaxation a fun and easy part of your daily life.",
     "size": 65,
-    "reviews": 2500,
+    "reviews": 25,
     "ratingAvg": 4.8,
     "downloads": 2,
     "ratings": [
@@ -90,13 +90,13 @@
     ]
   },
   {
-    "image": "https://i.ibb.co.com/5hcLY5Xw/demo-app-3.webp",
+    "image": "https://i.ibb.co/5hcLY5Xw/demo-app-3.webp",
     "title": "RecipeHub: Discover and Share Delicious Recipes",
     "companyName": "Foodie Labs",
     "id": 6,
-    "description": "Discover and share delicious recipes.",
+    "description": "RecipeHub brings a world of delicious recipes to your fingertips. Discover new meals every day. Save your favorite recipes for later. Share your creations with friends and family. Follow step-by-step instructions easily. Filter recipes based on ingredients, diet, or time. Rate recipes and see what others recommend. Keep a shopping list handy for easy meal prep. Try out new cuisines and cooking styles. RecipeHub makes cooking simple, fun, and inspiring.",
     "size": 80,
-    "reviews": 2900,
+    "reviews": 29,
     "ratingAvg": 4.4,
     "downloads": 15,
     "ratings": [
@@ -108,13 +108,13 @@
     ]
   },
   {
-    "image": "https://i.ibb.co.com/5g7HXcZ3/demo-app-4.webp",
+    "image": "https://i.ibb.co/5g7HXcZ3/demo-app-4.webp",
     "title": "TravelMate: Plan Your Trips and Explore New Destinations",
     "companyName": "Wanderlust Inc",
     "id": 7,
-    "description": "Plan your trips and explore new destinations.",
+    "description": "TravelMate is your ultimate travel planning companion. Plan trips, explore destinations, and make memories. Create itineraries and add must-see spots. Track travel expenses and bookings easily. Discover local attractions and hidden gems. Share your adventures with friends. Receive tips and recommendations from travelers worldwide. Save photos and notes from each journey. Get reminders for travel essentials. TravelMate makes every trip smoother, smarter, and more enjoyable.",
     "size": 95,
-    "reviews": 3100,
+    "reviews": 31,
     "ratingAvg": 4.5,
     "downloads": 9,
     "ratings": [
@@ -126,13 +126,13 @@
     ]
   },
   {
-    "image": "https://i.ibb.co.com/cS3wrphF/demo-app-5.webp",
+    "image": "https://i.ibb.co/cS3wrphF/demo-app-5.webp",
     "title": "Learnify: Learn New Skills Anytime From Anywhere",
     "companyName": "EduTech",
     "id": 8,
-    "description": "Learn new skills and languages anytime, anywhere.",
+    "description": "Learnify helps you gain new skills anytime, anywhere. Access courses on languages, coding, and creative arts. Learn at your own pace with interactive lessons. Track progress and celebrate achievements. Join learning challenges to stay motivated. Connect with a community of learners. Access quizzes and exercises to test knowledge. Save favorite lessons for quick review. Get tips and feedback from experts. Learnify makes learning exciting, practical, and fun for everyone.",
     "size": 120,
-    "reviews": 4500,
+    "reviews": 45,
     "ratingAvg": 4.6,
     "downloads": 1,
     "ratings": [
@@ -148,9 +148,9 @@
     "title": "WeatherNow: Accurate Weather Forecasts Instantly",
     "companyName": "SkyCast",
     "id": 9,
-    "description": "Get accurate weather forecasts in real-time.",
+    "description": "WeatherNow provides accurate forecasts at your fingertips. Check real-time temperature and weather conditions. Get hourly and weekly forecasts. Receive severe weather alerts and notifications. Track humidity, wind speed, and precipitation easily. Customize locations for multiple cities. Access radar and satellite maps. Stay prepared for outdoor activities. Learn useful tips for weather-related safety. WeatherNow makes planning your day easier and stress-free.",
     "size": 55,
-    "reviews": 2200,
+    "reviews": 22,
     "ratingAvg": 4.3,
     "downloads": 17,
     "ratings": [
@@ -162,13 +162,13 @@
     ]
   },
   {
-    "image": "https://i.ibb.co.com/ynyyXrzB/2962.jpg",
+    "image": "https://i.ibb.co.com/27pGK8hN/2962-min.jpg",
     "title": "MusicVibe: Stream Your Favorite Songs Effortlessly",
     "companyName": "SoundWave",
     "id": 10,
-    "description": "Stream and enjoy your favorite music anytime.",
+    "description": "MusicVibe lets you stream, discover, and create playlists of your favorite songs. Enjoy high-quality audio wherever you go. Discover trending songs, albums, and artists. Create personalized playlists for every mood. Follow friends and see what they are listening to. Share tracks and playlists effortlessly. Explore curated recommendations daily. Use offline mode for uninterrupted listening. Track your favorite genres and artists. MusicVibe makes your music experience fun, social, and immersive.",
     "size": 150,
-    "reviews": 5200,
+    "reviews": 52,
     "ratingAvg": 4.7,
     "downloads": 11,
     "ratings": [
@@ -180,13 +180,13 @@
     ]
   },
   {
-    "image": "https://i.ibb.co.com/9HSc4Qjr/photo-1568570125654-2fca9b2116b4.jpg",
+    "image": "https://i.ibb.co.com/2xYtZbJ/photo-1568570125654-2fca9b2116b4.jpg",
     "title": "ShopEasy: Enjoy a Seamless Shopping Experience Today",
     "companyName": "RetailTech",
     "id": 11,
-    "description": "A seamless shopping experience for all your needs.",
+    "description": "ShopEasy provides a seamless shopping experience for everyone. Browse thousands of products in various categories. Compare prices and read customer reviews easily. Save favorites and create personalized wishlists. Enjoy fast and secure checkout options. Track your orders in real-time. Receive exclusive discounts and offers regularly. Discover trending products and new arrivals daily. Connect with customer support anytime for help. ShopEasy makes online shopping simple, fast, and enjoyable.",
     "size": 110,
-    "reviews": 3100,
+    "reviews": 31,
     "ratingAvg": 4.4,
     "downloads": 14,
     "ratings": [
@@ -198,13 +198,13 @@
     ]
   },
   {
-    "image": "https://ibb.co.com/Mxg0xRXw",
+    "image": "https://i.ibb.co.com/Kz3Sf2x8/markus-winkler-cn-I-TRWp-Cs-A-unsplash-min.jpg",
     "title": "NewsFlash: Stay Updated With the Latest Headlines",
     "companyName": "MediaTech",
     "id": 12,
-    "description": "Stay updated with the latest news from around the world.",
+    "description": "NewsFlash keeps you informed with the latest news from around the world. Read breaking news instantly as it happens. Customize topics to see news that matters to you. Access in-depth analysis and expert opinions. Watch live videos and interviews. Save articles to read later offline. Share news easily with friends and family. Receive push notifications for important updates. Enjoy a clean and organized reading experience. NewsFlash makes staying informed simple, fast, and reliable.",
     "size": 70,
-    "reviews": 2600,
+    "reviews": 26,
     "ratingAvg": 4.5,
     "downloads": 6,
     "ratings": [
@@ -216,13 +216,13 @@
     ]
   },
   {
-    "image": "https://ibb.co.com/Mxg0xRXw",
+    "image": "https://i.ibb.co.com/pvdMsjKp/annett-burger-AAVp-Fd-BPFg4-unsplash.jpg",
     "title": "FitMeal: Healthy Meal Plans for Your Daily Nutrition",
     "companyName": "NutriTech",
     "id": 13,
-    "description": "Healthy meal plans and nutrition tracking.",
+    "description": "FitMeal helps you maintain a healthy diet with ease. Access personalized meal plans based on your goals. Track calories, nutrients, and portions. Discover new recipes and cooking tips. Plan meals for the week ahead effortlessly. Receive reminders to stay on track. Log meals and track progress over time. Share meal plans with friends or family. Get expert nutrition advice and guidance. FitMeal makes healthy eating simple, practical, and enjoyable.",
     "size": 65,
-    "reviews": 1900,
+    "reviews": 19,
     "ratingAvg": 4.6,
     "downloads": 13,
     "ratings": [
@@ -234,13 +234,13 @@
     ]
   },
   {
-    "image": "app14.png",
+    "image": "https://i.ibb.co.com/WWCYNZVd/ling-app-o-FWFpbw-bfk-unsplash.jpg",
     "title": "TravelLog: Document and Share Your Travel Adventures",
     "companyName": "WanderTech",
     "id": 14,
-    "description": "Document and share your travel adventures.",
+    "description": "TravelLog lets you document every travel adventure easily. Record your journey with photos, notes, and locations. Create interactive travel maps. Share experiences with friends and family. Keep memories organized by trips or dates. Track visited destinations and explore new places. Join a travel community for tips and recommendations. Customize travel journals with themes and layouts. Receive reminders for upcoming trips. TravelLog makes capturing and sharing travel memories fun and effortless.",
     "size": 80,
-    "reviews": 1500,
+    "reviews": 15,
     "ratingAvg": 4.4,
     "downloads": 8,
     "ratings": [
@@ -252,13 +252,13 @@
     ]
   },
   {
-    "image": "app15.png",
+    "image": "https://i.ibb.co.com/cKTvvdym/aerps-com-wj-FOj-A2z-Xy8-unsplash.jpg",
     "title": "LearnCode: Interactive Coding Challenges to Boost Skills",
     "companyName": "CodeLabs",
     "id": 15,
-    "description": "Learn coding interactively with fun challenges.",
+    "description": "LearnCode makes coding fun and interactive for everyone. Complete challenges and learn through practice. Access lessons in multiple programming languages. Track progress and earn badges for achievements. Collaborate and compete with friends or the community. Test your skills with quizzes and exercises. Receive hints and guidance when stuck. Build real projects while learning. Save favorite lessons and revisit anytime. LearnCode transforms coding into an engaging and practical experience.",
     "size": 130,
-    "reviews": 4800,
+    "reviews": 48,
     "ratingAvg": 4.7,
     "downloads": 5,
     "ratings": [
@@ -270,13 +270,13 @@
     ]
   },
   {
-    "image": "app16.png",
+    "image": "https://i.ibb.co.com/sp3yQk41/eyestetix-studio-TJ9t-O3-Keocg-unsplash.jpg",
     "title": "PhotoEditPro: Professional Photo Editing Made Easy",
     "companyName": "SnapTech",
     "id": 16,
-    "description": "Professional photo editing tools at your fingertips.",
+    "description": "PhotoEditPro offers professional photo editing tools in a simple app. Enhance colors, brightness, and contrast effortlessly. Apply artistic filters and special effects. Crop, rotate, and adjust images easily. Remove unwanted objects and blemishes. Create collages and custom layouts. Save images in high resolution. Share creations instantly with friends and social media. Learn advanced techniques through tutorials. PhotoEditPro turns your photos into professional-quality masterpieces.",
     "size": 140,
-    "reviews": 3200,
+    "reviews": 32,
     "ratingAvg": 4.5,
     "downloads": 16,
     "ratings": [
@@ -288,13 +288,13 @@
     ]
   },
   {
-    "image": "app17.png",
+    "image": "https://i.ibb.co.com/ZzSR0CK5/ionela-mat-YKe-I255r5-MQ-unsplash.jpg",
     "title": "MindFocus: Improve Your Concentration and Focus",
     "companyName": "WellMind",
     "id": 17,
-    "description": "Improve concentration and focus with guided exercises.",
+    "description": "MindFocus helps you sharpen concentration and improve focus. Follow guided exercises designed to enhance attention. Track your mental performance daily. Reduce distractions and build better habits. Join focus challenges for motivation. Use timers and reminders to stay consistent. Access tips for productivity and mental clarity. Monitor progress and celebrate improvements. Integrate focus sessions with daily tasks. MindFocus makes improving mental focus simple, practical, and effective.",
     "size": 55,
-    "reviews": 2100,
+    "reviews": 6,
     "ratingAvg": 4.6,
     "downloads": 4,
     "ratings": [
@@ -306,13 +306,13 @@
     ]
   },
   {
-    "image": "app18.png",
+    "image": "https://i.ibb.co.com/yFtCg5Bk/jonny-gios-7g-SSp-pl-Ea-M-unsplash.jpg",
     "title": "ShopSmart: All-in-One Smart Shopping Deals and Coupons",
     "companyName": "RetailPro",
     "id": 18,
-    "description": "Smart shopping deals and coupons all in one app.",
+    "description": "ShopSmart brings all your shopping deals in one place. Find the best discounts and coupons effortlessly. Track prices and save on purchases. Create wishlists to plan future buys. Get alerts for flash sales and promotions. Compare offers from multiple stores quickly. Share deals with friends and family. Access daily tips to save more. Keep all your shopping info organized in one app. ShopSmart makes smart shopping easy, fast, and fun.",
     "size": 90,
-    "reviews": 2800,
+    "reviews": 76,
     "ratingAvg": 4.4,
     "downloads": 18,
     "ratings": [
@@ -324,13 +324,13 @@
     ]
   },
   {
-    "image": "app19.png",
+    "image": "https://i.ibb.co.com/jZg3ysM8/barbara-rindisbacher-Q83-To-GQh-NQw-unsplash.jpg",
     "title": "WeatherPro: Professional Forecasts and Weather Alerts",
     "companyName": "ClimateTech",
     "id": 19,
-    "description": "Professional weather forecasts and alerts.",
+    "description": "WeatherPro delivers accurate weather forecasts and alerts. Track temperature, wind, and humidity in real-time. Receive notifications for severe weather conditions. Plan outdoor activities safely with hourly updates. Access radar and satellite maps for precise tracking. Customize locations for multiple cities. Monitor air quality and UV levels. Save favorite locations for quick access. Share weather updates with friends. WeatherPro ensures you are always prepared and informed.",
     "size": 60,
-    "reviews": 2300,
+    "reviews": 23,
     "ratingAvg": 4.3,
     "downloads": 10,
     "ratings": [
@@ -342,13 +342,13 @@
     ]
   },
   {
-    "image": "app20.png",
+    "image": "https://i.ibb.co.com/Y4NCJY84/kelly-sikkema-4-Cj-Cjps7az-E-unsplash.jpg",
     "title": "MusicFlow: Stream Music and Create Your Personal Playlists",
     "companyName": "SoundTech",
     "id": 20,
-    "description": "Stream music and create your personal playlists.",
+    "description": "MusicFlow lets you stream, discover, and organize music effortlessly. Create playlists for every mood or activity. Discover trending tracks, albums, and artists daily. Listen to high-quality audio for an immersive experience. Follow friends and share music easily. Access personalized recommendations based on listening habits. Enjoy offline playback for uninterrupted listening. Explore curated playlists and genres. Keep track of your favorite songs and artists. MusicFlow makes music streaming social, fun, and personalized.",
     "size": 150,
-    "reviews": 5400,
+    "reviews": 12,
     "ratingAvg": 4.7,
     "downloads": 20,
     "ratings": [

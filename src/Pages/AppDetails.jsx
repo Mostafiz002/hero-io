@@ -1,0 +1,67 @@
+import React from "react";
+import { useParams } from "react-router";
+import useApps from "../Hooks/useApps";
+import downloadImg from '../assets/icon-downloads.png'
+import reviewImg from '../assets/icon-review.png'
+import ratingImg from '../assets/icon-ratings.png'
+
+const AppDetails = () => {
+  const { id } = useParams();
+  const { apps, loading } = useApps();
+
+  const app = apps.find((a) => a.id === Number(id));
+
+  if (loading) return <p>Loading.......</p>;
+
+  return (
+    <section className="py-20 px-6  max-w-[1448px] mx-auto">
+      <div className="flex flex-col md:flex-row gap-10 pb-10 mb-10 border-b border-[#001931]/20">
+        <figure className="w-full lg:max-w-[350px] flex items-center justify-center  ">
+          <img
+            className="w-[350px]  min-h-[350px] object-cover "
+            src={app.image}
+            alt=""
+          />
+        </figure>
+        <div className="w-full">
+          <h3 className="font-semibold text-3xl text-[#001931]/80">
+            {app.title}
+          </h3>
+          <p className="mt-2 pb-8 text-[#627382] text-[12px] md:text-base border-b border-[#001931]/20 w-full">
+            Developed by{" "}
+            <span className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ">
+              {app.companyName}
+            </span>
+          </p>
+          <div className="flex flex-col md:flex-row gap-20 mt-8">
+            <div>
+                <img className="w-9 h-9" src={downloadImg} alt="" />
+                <p className="text-[#001931] my-2">Downloads</p>
+                <p className="text-[#001931] font-bold text-4xl">{app.downloads}M</p>
+            </div>
+            <div>
+                <img className="w-9 h-9" src={ratingImg} alt="" />
+                <p className="text-[#001931] my-2">Average Ratings</p>
+                <p className="text-[#001931] font-bold text-4xl">{app.ratingAvg}</p>
+            </div>
+            <div>
+                <img className="w-9 h-9" src={reviewImg} alt="" />
+                <p className="text-[#001931] my-2">Total Reviews</p>
+                <p className="text-[#001931] font-bold text-4xl">{app.reviews}K</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div>
+
+      </div>
+      <div>
+        <h5 className="mb-6 text-lg  font-medium text-[#001931]/80">Description</h5>
+        <p className="text-[#627382] text-[12px] md:text-base">{app.description}</p>
+      </div>
+    </section>
+  );
+};
+
+export default AppDetails;
