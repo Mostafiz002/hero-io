@@ -66,7 +66,12 @@ const Banner = () => {
           transition={{ duration: 1, delay: 0.9 }}
         />
       </div>
-      <div className="bg-gradient-to-br from-[#632EE3] to-[#9F62F2] w-full text-white py-20 px-6">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.9 }}
+        className="bg-gradient-to-br from-[#632EE3] to-[#9F62F2] w-full text-white py-20 px-6"
+      >
         <h2 className="text-center text-2xl md:text-4xl font-semibold">
           Trusted by Millions, Built for You
         </h2>
@@ -93,7 +98,7 @@ const Banner = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

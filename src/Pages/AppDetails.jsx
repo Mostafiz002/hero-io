@@ -53,7 +53,7 @@ const AppDetails = () => {
       <div className="flex flex-col md:flex-row gap-10 pb-10 mb-10 border-b border-[#001931]/20">
         <figure className="w-full lg:max-w-[350px] flex items-center justify-center  ">
           <img
-            className="md:w-[350px]  min-h-[350px] object-cover "
+            className="md:w-[350px]  h-[350px] object-cover "
             src={app.image}
             alt=""
           />

@@ -3,6 +3,7 @@ import { loadinstalled } from "../utils/localStorage";
 import InstalledApp from "../Components/InstalledApp";
 import { Link } from "react-router";
 import Loader from "../Components/Loader";
+import { motion } from "framer-motion";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState(() => loadinstalled());
@@ -34,15 +35,34 @@ const Installation = () => {
 
   return (
     <section className="py-20 px-6  max-w-[1448px] mx-auto">
-      <h2 className="text-center text-2xl md:text-4xl font-semibold">
+      <motion.h2
+        className="text-center text-2xl md:text-4xl font-semibold"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         Your Installed Apps
-      </h2>
-      <p className="text-[#627382] text-[12px] md:text-base text-center w-full mt-4 mb-10">
+      </motion.h2>
+      <motion.p
+        className="text-[#627382] text-[12px] md:text-base text-center w-full mt-4 mb-10"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.3 }}
+      >
         Explore All Trending Apps on the Market developed by us
-      </p>
+      </motion.p>
       <div className="flex flex-col md:flex-row gap-4 items-center justify-between mb-6">
-        <p>({sortedItem.length}) App Installed</p>
-        <select
+        <motion.p
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        >
+          ({sortedItem.length}) App Installed
+        </motion.p>
+        <motion.select
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.6 }}
           value={sortOrder}
           onChange={(e) => setSortOrder(e.target.value)}
           className="select bg-transparent"
@@ -50,7 +70,7 @@ const Installation = () => {
           <option value="none">Sort by download</option>
           <option value="price-asc">Low-&gt;High</option>
           <option value="price-desc">High-&gt;Low</option>
-        </select>
+        </motion.select>
       </div>
       {sortedItem.length === 0 && (
         <div className="text-center flex flex-col items-center justify-center gap-6">
@@ -63,7 +83,12 @@ const Installation = () => {
           </Link>
         </div>
       )}
-      <div className="flex flex-col gap-6">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.1, delay: 0.5 }}
+        className="flex flex-col gap-6"
+      >
         {sortedItem.map((app) => (
           <InstalledApp
             key={app.id}
@@ -71,7 +96,7 @@ const Installation = () => {
             app={app}
           />
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
