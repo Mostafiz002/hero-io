@@ -43,7 +43,7 @@ const Home = () => {
         <div className="mt-12">
           <Link
             to="/apps"
-            className="hidden py-3 px-8 rounded-sm cursor-pointer lg:flex gap-2 items-center justify-center font-medium text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] transition duration-300 ease-in-out hover:scale-103  hover:from-[#7438ed] hover:to-[#8c5dc9]"
+            className="mt-4 flex items-center gap-2 text-[#090909] py-[0.7em] px-[1.7em] text-sm md:text-[18px] rounded-md bg-[#e8e8e8] cursor-pointer border border-[#e8e8e8] transition-all duration-300 shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] hover:border-white"
           >
             <ArrowUpRight size={18} strokeWidth={1.85} /> Show All
           </Link>
