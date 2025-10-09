@@ -17,7 +17,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { ToastContainer } from "react-toastify";
-import { updateList } from "../utils/localStorage";
+import { loadinstalled, updateList } from "../utils/localStorage";
 import Loader from "../Components/Loader";
 
 const AppDetails = () => {
@@ -25,6 +25,13 @@ const AppDetails = () => {
   const { apps, loading } = useApps();
   const [installed, setInstalled] = useState(false);
   const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    const installedData =  loadinstalled()
+    const isInstalled = installedData.some((app) => app.id === Number(id));
+     isInstalled && setInstalled(true)
+
+  }, [id]);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoader(false), 1200);
