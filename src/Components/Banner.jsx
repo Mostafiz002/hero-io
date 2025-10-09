@@ -73,21 +73,21 @@ const Banner = () => {
         <div className="max-w-[900px] mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="flex flex-col justify-between items-center text-center rounded-2xl bg-[#ffffff1b] p-6">
             <p className="font-thin text-gray-300 text-base">Total Downloads</p>
-            <p className="my-4 font-bold text-6xl">29.6M</p>
+            <p className="my-4 font-bold text-3xl md:text-6xl">29.6M</p>
             <p className="font-thin text-gray-300 text-base">
               21% more than last month
             </p>
           </div>
           <div className="flex flex-col justify-between items-center text-center rounded-2xl bg-[#ffffff1b] p-6">
             <p className="font-thin text-gray-300 text-base">Total Reviews</p>
-            <p className="my-4 text-6xl font-bold">906K</p>
+            <p className="my-4 text-3xl md:text-6xl font-bold">906K</p>
             <p className="font-thin text-gray-300 text-base">
               46% more than last month
             </p>
           </div>
           <div className="flex flex-col justify-between items-center text-center rounded-2xl bg-[#ffffff1b] p-6">
             <p className="font-thin text-gray-300 text-base">Active Apps</p>
-            <p className="my-4 font-bold text-6xl">132+</p>
+            <p className="my-4 font-bold text-3xl md:text-6xl">132+</p>
             <p className="font-thin text-gray-300 text-base">
               31 more will Launch
             </p>

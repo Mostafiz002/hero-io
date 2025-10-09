@@ -57,7 +57,7 @@ const Installation = () => {
           <p className="text-center text-3xl mt-10">No apps found</p>
           <Link
             to="/apps"
-            className="hidden py-3 px-10 rounded-sm cursor-pointer lg:flex gap-2 items-center justify-center font-medium text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] transition-all duration-300 hover:scale-103  hover:from-[#7438ed] hover:to-[#8c5dc9]"
+            className=" py-3 px-10 rounded-sm cursor-pointer flex gap-2 items-center justify-center font-medium text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] transition-all duration-300 hover:scale-103  hover:from-[#7438ed] hover:to-[#8c5dc9]"
           >
             All Apps
           </Link>

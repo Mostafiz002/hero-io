@@ -16,7 +16,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { toast, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import { updateList } from "../utils/localStorage";
 import Loader from "../Components/Loader";
 
@@ -44,7 +44,6 @@ const AppDetails = () => {
   if (loading) return <p>Loading.......</p>;
 
   const handleInstall = (id) => {
-    installed || toast.success("App Installed Successfully 🥳");
     setInstalled(true);
     updateList(id);
   };
@@ -98,9 +97,7 @@ const AppDetails = () => {
               disabled={installed}
               className="mt-10 py-3 px-5 text-white bg-[#00D390] rounded-sm hover:bg-[#02c587] transition duration-300 ease-in-out cursor-pointer"
             >
-              {installed === false
-                ? `Install Now (${app.size} MB)`
-                : "Installed"}
+              {installed ? "Installed" : `Install Now (${app.size} MB)`}
             </button>
           </div>
         </div>

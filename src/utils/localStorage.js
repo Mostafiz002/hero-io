@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 // to get
 export const loadinstalled = () => {
   try {
@@ -14,8 +16,13 @@ export const updateList = (app) => {
   const installed = loadinstalled();
 
   try {
+    const isDuplicate = installed.some((a) => a.id === app.id);
+    if (isDuplicate) {
+      return toast.error("App already installed 😭");
+    }
     const updatedinstalled = [...installed, app];
     localStorage.setItem("installed", JSON.stringify(updatedinstalled));
+    toast.success("App Installed Successfully 🥳");
   } catch (err) {
     console.log(err);
   }
